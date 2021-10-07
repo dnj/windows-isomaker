@@ -17,7 +17,7 @@
         "php": "^7.4|^8.0",
         "dnj/tmp-filesystem": "^1.0",
         "dnj/autounattend": "^1.0",
-        "dnj/isomaker": "dev-master"
+        "dnj/isomaker": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -25,7 +25,7 @@
         "friendsofphp/php-cs-fixer": "^3.1"
     },
     "scripts": {
-        "test:types": "./vendor/bin/phpstan analyse",
+        "test:types": "vendor/bin/phpstan analyse",
         "test:phpunit": "vendor/bin/phpunit",
         "test:codestyle": "vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no",
         "test": [
