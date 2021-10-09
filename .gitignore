@@ -1,2 +1,5 @@
 /vendor
 /.php-cs-fixer.cache
+/.phpunit.cache
+/coverage
+/junit.xml

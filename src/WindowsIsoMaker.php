@@ -22,9 +22,14 @@ class WindowsIsoMaker extends IsoMaker
         if (null !== $this->os->getISOFile()) {
             $isoFiles[] = $this->os->getISOFile();
             if ($customization->getRemoveBootfix()) {
+                $this->logger->debug('Removing bootfix');
                 $this->removeBootfix();
             }
+        } else {
+            $this->logger->debug('OS iso file is missing, skiping remove bootfix');
         }
+
+        $this->logger->debug('making unattend iso');
         $isoFiles[] = $this->makeUnattendISO($customization->getUnattend(), $customization->getAttachments());
 
         return $isoFiles;
@@ -51,6 +56,7 @@ class WindowsIsoMaker extends IsoMaker
 
     protected function packISO(IDirectory $directory, IFile $iso, ?string $label = null): void
     {
+        $this->logger->debug('Pack dir:'.$directory->getPath().' to iso:'.$iso->getPath());
         $this->insureCommand('mkisofs');
         $bootOptions = [];
         if (null !== $label) {

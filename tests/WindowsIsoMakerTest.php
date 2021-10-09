@@ -28,10 +28,8 @@ class WindowsIsoMakerTest extends TestCase
         if ($iso) {
             $this->assertContains($iso, $ouputIsos);
         }
-        if (count($ouputIsos) === 2) {
-            $unattend = new Local\File("./unattend.iso");
-            $ouputIsos[1]->copyTo($unattend);
-        }
+        $unattend = new Local\File('/tmp/unattend.iso');
+        $ouputIsos[count($ouputIsos) - 1]->copyTo($unattend);
     }
 
     public function getISO(bool $required = true): ?Local\File

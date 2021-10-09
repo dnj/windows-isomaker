@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41e93bc868554acbb13b80a941a532d5",
+    "content-hash": "ae59fd403ac7b34dad153ca360b6084e",
     "packages": [
         {
             "name": "dnj/autounattend",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnj/autounattend.git",
-                "reference": "494d404a39e152e8dd44765686120e531358197e"
+                "reference": "eae91a353bd8552c557859016b4114cba0b75151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnj/autounattend/zipball/494d404a39e152e8dd44765686120e531358197e",
-                "reference": "494d404a39e152e8dd44765686120e531358197e",
+                "url": "https://api.github.com/repos/dnj/autounattend/zipball/eae91a353bd8552c557859016b4114cba0b75151",
+                "reference": "eae91a353bd8552c557859016b4114cba0b75151",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "issues": "https://github.com/dnj/autounattend/issues",
                 "source": "https://github.com/dnj/autounattend/tree/1.0.0"
             },
-            "time": "2021-10-07T11:09:15+00:00"
+            "time": "2021-10-09T00:02:04+00:00"
         },
         {
             "name": "dnj/filesystem",
@@ -86,21 +86,22 @@
         },
         {
             "name": "dnj/isomaker",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dnj/isomaker.git",
-                "reference": "12598a6fd207312d04cb51798ede916b7df40b59"
+                "reference": "a898f9951bc0180be17483a5b87f4ce606767298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnj/isomaker/zipball/12598a6fd207312d04cb51798ede916b7df40b59",
-                "reference": "12598a6fd207312d04cb51798ede916b7df40b59",
+                "url": "https://api.github.com/repos/dnj/isomaker/zipball/a898f9951bc0180be17483a5b87f4ce606767298",
+                "reference": "a898f9951bc0180be17483a5b87f4ce606767298",
                 "shasum": ""
             },
             "require": {
                 "dnj/tmp-filesystem": "^1.0",
                 "php": "^7.4|^8.0",
+                "psr/log": "^1|^2|^3",
                 "spatie/enum": "^3.9",
                 "symfony/process": "^5.1.4"
             },
@@ -123,9 +124,9 @@
             "description": "A library for make ISO files customize",
             "support": {
                 "issues": "https://github.com/dnj/isomaker/issues",
-                "source": "https://github.com/dnj/isomaker/tree/1.0.0"
+                "source": "https://github.com/dnj/isomaker/tree/1.1.0"
             },
-            "time": "2021-10-07T11:10:34+00:00"
+            "time": "2021-10-09T21:37:08+00:00"
         },
         {
             "name": "dnj/local-filesystem",
@@ -204,6 +205,56 @@
                 "source": "https://github.com/dnj/tmp-filesystem/tree/1.0.0"
             },
             "time": "2021-09-27T10:49:05+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
+            },
+            "time": "2021-07-14T16:46:02+00:00"
         },
         {
             "name": "spatie/enum",
@@ -2268,56 +2319,6 @@
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
-            "name": "psr/log",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/ef29f6d262798707a9edd554e2b82517ef3a9376",
-                "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/2.0.0"
-            },
-            "time": "2021-07-14T16:41:46+00:00"
-        },
-        {
             "name": "sebastian/cli-parser",
             "version": "1.0.1",
             "source": {
@@ -3283,16 +3284,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.3.7",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "8b1008344647462ae6ec57559da166c2bfa5e16a"
+                "reference": "649730483885ff2ca99ca0560ef0e5f6b03f2ac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8b1008344647462ae6ec57559da166c2bfa5e16a",
-                "reference": "8b1008344647462ae6ec57559da166c2bfa5e16a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
+                "reference": "649730483885ff2ca99ca0560ef0e5f6b03f2ac1",
                 "shasum": ""
             },
             "require": {
@@ -3300,12 +3301,11 @@
                 "symfony/deprecation-contracts": "^2.1",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php73": "^1.8",
-                "symfony/polyfill-php80": "^1.16",
+                "symfony/polyfill-php80": "^1.15",
                 "symfony/service-contracts": "^1.1|^2",
                 "symfony/string": "^5.1"
             },
             "conflict": {
-                "psr/log": ">=3",
                 "symfony/dependency-injection": "<4.4",
                 "symfony/dotenv": "<5.1",
                 "symfony/event-dispatcher": "<4.4",
@@ -3313,10 +3313,10 @@
                 "symfony/process": "<4.4"
             },
             "provide": {
-                "psr/log-implementation": "1.0|2.0"
+                "psr/log-implementation": "1.0"
             },
             "require-dev": {
-                "psr/log": "^1|^2",
+                "psr/log": "~1.0",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
                 "symfony/event-dispatcher": "^4.4|^5.0",
@@ -3362,7 +3362,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.3.7"
+                "source": "https://github.com/symfony/console/tree/v5.3.2"
             },
             "funding": [
                 {
@@ -3378,7 +3378,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-25T20:02:16+00:00"
+            "time": "2021-06-12T09:42:48+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
